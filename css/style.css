@@ -1,0 +1,345 @@
+html,
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    max-width: 1290px;
+    margin: 0 auto 200px;
+}
+
+.container--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container--wrap {
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+.container--bg-black {
+    color: #FFFFFF;
+    padding: 120px 0 155px;
+    margin-bottom: 200px;
+}
+
+.container--bg-green {
+    color: #FFFFFF;
+    padding: 160px 0;
+    margin-bottom: 200px;
+}
+
+.container--bg-black::before {
+    content: "";
+    display: block;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container--bg-green::before {
+    content: "";
+    display: block;
+    background-color: #32392D;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.margin-right {
+    margin-right: 6.2%;
+}
+
+.margin-left--extra {
+    margin-left: 8.5%;
+}
+
+.margin-left--minus {
+    margin-left: -14%;
+}
+
+.margin-top {
+    margin-top: 20px;
+}
+
+.margin-bottom {
+    margin-bottom: 30px;
+}
+
+.button {
+    padding: 11px 48px;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.button--expand {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height, or 150% */
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0 0 3px;
+    margin-top: 40px;
+}
+
+.block-300 {
+    width: 23.3%;
+}
+
+.block-360 {
+    width: 27.9%;
+}
+
+.block-420 {
+    width: 31.8%;
+}
+
+.block-520 {
+    width: 40.3%;
+}
+
+.block-630 {
+    width: 48.8%;
+}
+
+.block-850 {
+    width: 65.9%;
+}
+
+.block-910 {
+    width: 70.5%;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.section__desc--header {
+    padding: 80px 0 55px;
+}
+
+.section__desc--header::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 303px;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    left: -1px;
+    bottom: 0;
+}
+
+.section__title {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    /* or 117% */
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.section__title--white {
+    color: #FFFFFF;
+}
+
+.section__title--small {
+    margin-bottom: 20px;
+}
+
+.section__title--centered {
+    text-align: center;
+}
+
+.section__title--header {
+    font-size: 48px;
+    line-height: 70px;
+    /* or 146% */
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 90px;
+}
+
+.section__title--advantages {
+    font-size: 24px;
+    line-height: 42px;
+    /* identical to box height, or 175% */
+}
+
+.section__title--advantages::before {
+    content: "";
+    display: block;
+    width: 31px;
+    height: 20px;
+    background-image: url(/img/check_icon.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: -60px;
+    top: 8px;
+}
+
+.section__content {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    /* or 150% */
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.section__content--white {
+    color: rgba(255, 255, 255, 0.8);
+    ;
+}
+
+.section__content--regular {
+    width: 80%;
+}
+
+.section__content--header {
+    font-size: 24px;
+    line-height: 29px;
+    padding: 48px 36px;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #32392D;
+    box-sizing: border-box;
+    position: relative;
+    margin-left: 6.2%;
+}
+
+.section__img--bg::after {
+    content: "";
+    display: block;
+    width: 366px;
+    height: 232px;
+    background-color: #32392D;
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    z-index: -1;
+}
+
+header {
+    color: #FFFFFF;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: url(/img/header_bg.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -5;
+}
+
+.header-menu {
+    max-width: 1290px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.header-menu--bg {
+    background-color: rgba(97, 120, 114, 0.7);
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.8);
+    width: 23.3%;
+}
+
+.header-logo {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.header-img {
+    width: 65.9%;
+    margin-left: 25.6%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.textures {
+    display: flex;
+    justify-content: space-between;
+}
+
+.textures::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 160px;
+    background-color: rgba(45, 77, 29, 0.2);
+    position: absolute;
+    top: -60px;
+    right: 80px;
+    z-index: -1;
+}
+
+.textures__item {
+    width: 146px;
+    height: 146px;
+}
+
+.details {
+    margin-top: 120px;
+}
+
+.details-card--small {
+    text-align: right;
+    position: absolute;
+    top: -380px;
+    right: 220px;
+}
+
+.advantages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages__card {
+    margin-left: 6.2%;
+}
