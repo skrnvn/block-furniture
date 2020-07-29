@@ -31,6 +31,10 @@ body {
     margin-bottom: 200px;
 }
 
+.container--bg-lightgreen {
+    color: #FFFFFF;
+}
+
 .container--bg-black::before {
     content: "";
     display: block;
@@ -47,6 +51,18 @@ body {
     content: "";
     display: block;
     background-color: #32392D;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container--bg-lightgreen::before {
+    content: "";
+    display: block;
+    background-color: rgba(97, 120, 114, 0.9);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -85,6 +101,10 @@ body {
     text-transform: capitalize;
     font-size: 16px;
     line-height: 19px;
+}
+
+.button--white {
+    border: 1px solid #FFFFFF;
 }
 
 .button--expand {
@@ -149,6 +169,11 @@ body {
     bottom: 0;
 }
 
+.section__desc--offer {
+    margin: 50px 0 45px;
+    margin-right: 17.1%;
+}
+
 .section__title {
     font-family: 'Fira Sans Condensed', sans-serif;
     font-style: normal;
@@ -186,6 +211,15 @@ body {
     font-size: 24px;
     line-height: 42px;
     /* identical to box height, or 175% */
+}
+
+.section__title--footer-menu {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
 }
 
 .section__title--advantages::before {
@@ -229,6 +263,17 @@ body {
     box-sizing: border-box;
     position: relative;
     margin-left: 6.2%;
+}
+
+.section__content--footer {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
 }
 
 .section__img--bg::after {
@@ -342,4 +387,84 @@ header::before {
 
 .advantages__card {
     margin-left: 6.2%;
+}
+
+.offer-img::before {
+    content: "";
+    display: block;
+    width: 440px;
+    height: 205px;
+    background-color: rgba(50, 57, 45, 0.3);
+    position: absolute;
+    top: 35px;
+    right: -40px;
+}
+
+footer.container--bg-black {
+    color: #FFFFFF;
+    margin-bottom: 0;
+    padding: 100px 0 30px;
+}
+
+.footer-main {
+    align-items: flex-start;
+}
+
+.footer-logo {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.footer-menu {
+    align-items: flex-start;
+}
+
+.form {
+    margin-top: 40px;
+}
+
+.form-email {
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    padding: 5px 0;
+}
+
+.form-submit {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    padding: 0;
+}
+
+.footer-social__link {
+    margin-top: 40px;
+    display: block;
+    width: 23px;
+    height: 23px;
+}
+
+.footer-social__link--instagram {
+    background-image: url(/img/instagram_icon.png);
+}
+
+.footer-social__link--facebook {
+    background-image: url(/img/facebook_icon.png);
+}
+
+.footer-social__link--linkedin {
+    background-image: url(/img/linkedin_icon.png);
+}
+
+.footer-bottom {
+    margin-top: 140px;
 }
